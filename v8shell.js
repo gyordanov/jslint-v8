@@ -23,6 +23,6 @@ var outputErrors = function (errors) {
     return output.join('');
 };
 
-if (!JSLINT(read(input_filename), {})) {
-    print(outputErrors(JSLINT.errors));
+if (!JSHINT(read(input_filename), {})) {
+    print(outputErrors(JSHINT.errors));
 }
